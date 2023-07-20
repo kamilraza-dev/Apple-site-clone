@@ -303,5 +303,8 @@
 @media (max-width: 470px) {
     .section-2-img {
         width: 300px;
-    }     
+    }    
+    .section-2 {
+        height: 400px;
+    } 
 }
