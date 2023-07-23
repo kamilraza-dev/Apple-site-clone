@@ -11,22 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Tailwind cdn -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"> -->
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
     <title>Apple</title>
 </head>
 <body>
     <!-- LANDING PAGE -->
+
     <div class="landing-page">
         <!-- NAVBAR -->
-        <section class="navbar-section">
+        <section class="navbar-section" id="navbar-section">
             <ul class="navbar">
                 <li class="nav-link">
                     <img src="./assets/icons/Apple_logo.png" alt="Apple Logo" class="nav-logo">
                 </li>
                 <ul class="nav-links">
-                    <li class="nav-link">
-                        <a href="#">Store</a>
+                    <li class="nav-link store-link">
+                        <a href="#" onmouseover="showStoreSec()" onmouseout="hideStoreSec()">Store</a>
                     </li>
                     <li class="nav-link">
                         <a href="#">Mac</a>
@@ -76,7 +79,11 @@
                         </span>
                 </li>
             </ul>
+                <div class="store-sec" id="store-sec" data-aos="fade-down">
+                        Store Section
+                </div>
         </section>
+
         <!-- LANDING PAGE CONTENT -->
         <div class="text-container">
             <span class="main-heading-white">iPhone 14 Pro</span>
@@ -105,16 +112,100 @@
 
     <!-- SECTION 3 -->
     <div class="section section-3">
-        <div class="text-container">
-            <span class="main-heading-white sec-3-heading">Apple at Work presents</span>
-            <span class="sub-heading-white sec-3-sub-heading">Best-in-class security for worst-case scenarios</span>
-            <span class="landing-page-links">
-                <a href="#" class="link">Learn more</a><span class="mr20"> ></span> 
-                <a href="#" class="link">Buy</a> >
+        <div class="sec-3-text-container">
+            <span class="sec-3-logo">
+                <img src="./assets/images/section-3-logo.png" alt="">
+            </span>
+            <span class="sec-3-text-pic">
+                <img src="./assets/images/section-3-txt.png" alt="">
             </span>
         </div>
+        <div class="sec-3-link">
+            <a href="#" class="link link-white">Watch the full debut matchon Apple TV ></a>
+        </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section-4">
+        <div class="sec-4-1">
+            <div class="sec-4-text-container">
+                <span class="sec-4-main-heading-dark">Save on Mac and iPad for college</span>
+                <span class="sec-4-sub-heading-dark">Plus get a gift card upto $150.<sup>2</sup> </span>
+                <span class="landing-page-links">
+                    <a href="#" class="link">Shop Now</a><span class="mr20"> ></span> 
+                </span>
+            </div>
+        </div>
+        <div class="sec-4-2">
+            <div class="sec-4-text-container">
+                <span class="sec-4-main-heading-dark">MacBook Air 15''</span>
+                <span class="sec-4-sub-heading-dark">Impressively big. impossibly thin.</span>
+                <span class="landing-page-links">
+                    <a href="#" class="link">Learn more</a><span class="mr20"> ></span> 
+                    <a href="#" class="link">Buy</a> > 
+                </span>
+            </div>
+        </div>
+        <div class="sec-4-3">
+            <div class="sec-4-text-container text-bottom">
+                <span class="sec-4-main-heading-dark">
+                    <img src="./assets/icons/Apple_logo.png" alt="" class="sec-4-3-logo">Vision Pro
+                </span>
+                <span class="sec-4-sub-heading-dark">Welcome to the era of spatial computing. </span>
+                <span class="discription" >Available early next year in the U.S.</span>
+                <span class="landing-page-links">
+                    <a href="#" class="link">Learn more</a><span class="mr20"> ></span> 
+                </span>
+            </div>
+        </div>
+        <div class="sec-4-4">
+            <div class="sec-4-text-container">
+                <span>
+                    <img src="./assets/images/sec-4-4-logo.png" alt="">
+                </span>
+                <span class="sec-4-sub-heading-white">A healthy leap ahead.</span>
+                <span class="landing-page-links">
+                    <a href="#" class="link">Learn more</a><span class="mr20"> ></span> 
+                    <a href="#" class="link">Buy</a> > 
+                </span>
+            </div>
+        </div>
+        <div class="sec-4-5">
+            <div class="sec-4-text-container">
+                <span class="sec-4-main-heading-white">iPad Pro</span>
+                <span class="sec-4-sub-heading-white center-y">Supercharged by&nbsp; 
+                    <img src="./assets/images/sec-4-5-logo.png" alt="">
+                </span>
+                <span class="landing-page-links">
+                    <a href="#" class="link">Learn more</a><span class="mr20"> ></span> 
+                    <a href="#" class="link">Buy</a> > 
+                </span>
+            </div>
+        </div>
+        <div class="sec-4-6">
+            <div class="sec-4-text-container">
+                <span class="sec-4-main-heading-dark">
+                    <img src="./assets/icons/Apple_logo.png" alt="" class="sec-4-4-logo">Card
+                </span>
+                <span class="sec-4-sub-heading-dark">Get upto 3% Daily Cash back with every purchase. </span>
+                <span class="landing-page-links">
+                    <a href="#" class="link">Learn more</a><span class="mr20"> ></span> 
+                    <a href="#" class="link">Apply Now</a> > 
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div>
+
     </div>
     
-
+<script src="./app.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
